@@ -68,6 +68,7 @@
   box-shadow: 15px rgb(200, 192, 192);
   
 }
+
 .alumni{
   grid-column-start: 0;
   grid-column-end: 2;
@@ -123,3 +124,99 @@ h2{
   border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+
+  body{
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:6px; 
+    
+  }
+  .header{  
+    width: 50vw;
+    height: 300px;
+    grid-column-start: 0;
+    grid-column-end: 1;
+    grid-row-start: 0;
+    grid-row-end: 1;
+  
+    
+  }
+  .school{
+    width: 50vw;
+    height: 150px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .student{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 50vw;
+    height: 146px;
+  }
+  .time{
+    width: 50vw;
+    height: 165px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .header{
+    overflow: auto;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--blue-color);
+    padding: 2%;
+  }
+
+  h3{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: -2vw;
+
+  }
+  .footer{
+    font-size: 14px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: var(--orange-color);
+    padding: 2%;
+    overflow: auto;
+    background-size:contain no-repeat;
+    background-position: center;
+    text-align: left;
+    margin-bottom: 2vw;
+    height: 150px;
+    margin-top: -2vw;
+
+    }
+
+    main{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .alumni{
+      width: 50vw;
+      height: 165px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+  } 
